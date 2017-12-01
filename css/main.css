@@ -1,0 +1,72 @@
+/*------body elements------*/
+  body {
+     background-color: hsl(203, 84%, 90%);
+     color: #00245D;
+     font-family: "Exo", Georgia, sans-serif;
+}
+/*------navbar elements------*/
+.navbar {
+  background: #00245D;
+  border-color: #00245D;
+  font-family: "Exo", Georgia, sans-serif;
+}
+/*------button elements------*/
+.btn {
+  color: whitesmoke;
+  background: #00245D;
+  border-color: #00245D;
+  /*font-weight: lighter;*/
+}
+
+
+.btn-primary:active, .btn-primary.active {
+    border-color: #245580;
+    background: #00245D;
+}
+
+  .btn-primary:hover{
+    background:#337ab7;
+}
+/*------list of images------*/
+ul#images li {
+    display: inline-block;
+    margin: 15px 0 20px;
+    width: 100%;
+    padding: 5%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    transition: 1s ease;
+}
+ul#images li img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+ul#images li button {
+    display: inline-block;
+}
+ul#images {
+    list-style-type: none;
+}
+
+ul#images .placeholder {
+    font-size: 2em;
+    font-weight: 500;
+    color: rgba(78, 78, 69, 0.82);
+    width: 100%;
+    margin: 2em;
+}
+/*------modal images------*/
+.modal-body img {
+    width: 100%;
+    height: auto;
+}
+hr {
+    clear:both;
+}
+
+ul {
+    position:relative;
+    list-style-type:none;
+}
