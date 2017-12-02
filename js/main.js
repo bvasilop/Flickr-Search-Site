@@ -17,13 +17,14 @@
                 })
                 //      done() handler that displays and refreshes the content appropriately.
                 .done(function( data ) {
+
                     $("#images").empty();
                     $('h1.search-title').first()[0].innerHTML = "Searching for: " + tags;
                     $.each( data.items, function( i, item ) {
                         // 4.   Update the display to add the images to the list with the id
                         //      `#images`.
                         let newListItem = $('<li>');
-                        $( "<img>").attr("src", item.media.m).appendTo(newListItem);
+                        $( "<img>").fadeIn(3000).attr("src", item.media.m).appendTo(newListItem);
                         $("<br><br>").appendTo(newListItem);
 
                 let newButton = $("<button class='btn btn-sm btn-primary'>enlarge</button>").attr({

@@ -86,3 +86,29 @@ ul {
     position:relative;
     list-style-type:none;
 }
+@media only screen and (max-width: 2000px) and (min-width: 721px){
+    ul#images li img {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+        column-count: 4;
+        -webkit-column-count: 4; /* Chrome, Safari, Opera */
+        -moz-column-count: 4; /* Firefox */
+
+    }
+}
+
+
+
+@media only screen and (max-width: 720px) and (min-width: 320px){
+    ul#images li img {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+        column-count: 12;
+        -webkit-column-count: 12; /* Chrome, Safari, Opera */
+        -moz-column-count: 12; /* Firefox */
+
+    }
+}
+
