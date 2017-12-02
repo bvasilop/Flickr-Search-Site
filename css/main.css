@@ -1,35 +1,50 @@
 /*------body elements------*/
-  body {
-     background-color: hsl(203, 84%, 90%);
-     color: #00245D;
-     font-family: "Exo", Georgia, sans-serif;
+body {
+    padding-right: 35px;
+    background-color: hsl(203, 84%, 90%);
+    color: #00245D;
+    font-family: "Exo", Georgia, sans-serif;
 }
 /*------navbar elements------*/
 .navbar {
-  background: #00245D;
-  border-color: #00245D;
-  font-family: "Exo", Georgia, sans-serif;
+    padding:0;
+    background: #00245D;
+    border-color: #00245D;
+    font-family: "Exo", Georgia, sans-serif;
+}
+a.navbar-brand{
+    font-size: 2.25rem;
+    padding-left: 25px;
+}
+/*------Header------*/
+h1{
+    margin-left: 25px;
 }
 /*------button elements------*/
 .btn {
-  color: whitesmoke;
-  background: #00245D;
-  border-color: #00245D;
+    color: whitesmoke;
+    background: #00245D;
+    border-color: #00245D;
   /*font-weight: lighter;*/
 }
 
 
 .btn-primary:active, .btn-primary.active {
+
     border-color: #245580;
     background: #00245D;
 }
 
-  .btn-primary:hover{
+.btn-primary:hover{
     background:#337ab7;
+}
+
+#img-button{
+    margin-left: 25px;
 }
 /*------list of images------*/
 ul#images li {
-    display: inline-block;
+    display: inline-grid;
     margin: 15px 0 20px;
     width: 100%;
     padding: 5%;
@@ -51,11 +66,12 @@ ul#images {
 }
 
 ul#images .placeholder {
+    text-align: center;
     font-size: 2em;
     font-weight: 500;
     color: rgba(78, 78, 69, 0.82);
     width: 100%;
-    margin: 2em;
+    margin: 0em;
 }
 /*------modal images------*/
 .modal-body img {

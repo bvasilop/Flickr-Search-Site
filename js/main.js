@@ -3,9 +3,9 @@
             //hide add images button on page load with ID hide
             $('#hide').hide();
             // 1.   Accept a string value called `tags` as an argument.
-            var searchImages = function(tags) {
+            let searchImages = function(tags) {
            // 2. Define the location of the Flickr API
-                var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+                let flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
                 console.log(tags);
                 $('#images').innerHTML = '<li class="search-throbber">Searching...</li>';
                 // 3.   Construct a `$.getJSON()` call where you send a request object
@@ -22,11 +22,11 @@
                     $.each( data.items, function( i, item ) {
                         // 4.   Update the display to add the images to the list with the id
                         //      `#images`.
-                        var newListItem = $('<li>');
+                        let newListItem = $('<li>');
                         $( "<img>").attr("src", item.media.m).appendTo(newListItem);
                         $("<br><br>").appendTo(newListItem);
 
-                  var newButton = $("<button class='btn btn-sm btn-primary'>enlarge</button>").attr({
+                let newButton = $("<button class='btn btn-sm btn-primary'>enlarge</button>").attr({
                             'data-title': item.title,
                             'data-toggle': "modal",
                             'data-target': "#infoModal",
@@ -45,7 +45,7 @@
                         if ( i === 15 ) {
                             return false;
                         }
-                       //hide li elements after search
+                    //hide li elements after search
                         $(function(){
                             $('li').hide()
                             })
@@ -101,7 +101,7 @@
                             $(this)
                                 .appendTo($(this).parent())
                             });
-                      });
+                    });
                 ///previous/remove function -- not implemented yet
                 $(this).find('.prev').click(function () {
                     $(this)
@@ -113,7 +113,7 @@
                             .find('li:last-child')
                             .fadeIn()
                             .prependTo($(this).parent())
-                      });
+                    });
                 });
             });
-      });
+    });

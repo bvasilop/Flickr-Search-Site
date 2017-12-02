@@ -20,6 +20,7 @@
         </style>
         <link rel="stylesheet" href="css/bootstrap-theme.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
@@ -35,7 +36,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="http://billvas.com/wats1020-flickr-search/">Flickr Search</a>
+          <a class="navbar-brand" href="http://billvas.com/wats1020-flickr-search/"> <i class="fa fa-home" aria-hidden="true"></i> Flickr Search</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <form class="navbar-form navbar-right" role="form">
@@ -50,10 +51,14 @@
     <div class="container">
       <h1 class="search-title">Flickr Search</h1>
     <div id="hide" class="add" href="#">
-      <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Add Image</a></div>
+      <a href="#" class="btn btn-primary btn-lg active" id="img-button" role="button" aria-pressed="true">Add Image</a></div>
+      <div class= "row">
+          <div class "col-xs-12 col-md-3 col-lg-3">
       <ul id="images">
         <li class="placeholder">Search for images using the search bar above!</li>
       </ul>
+    </div>
+    </div>
       <hr>
       <footer>
         <p>&copy; Bill Vasilopoulos 2017</p>
