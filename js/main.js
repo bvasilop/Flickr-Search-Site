@@ -24,7 +24,7 @@
                         // 4.   Update the display to add the images to the list with the id
                         //      `#images`.
                         let newListItem = $('<li>');
-                        $( "<img>").fadeIn(3000).attr("src", item.media.m).appendTo(newListItem);
+                        $( "<img>").attr("src", item.media.m).appendTo(newListItem);
                         $("<br><br>").appendTo(newListItem);
 
                 let newButton = $("<button class='btn btn-sm btn-primary'>enlarge</button>").attr({
@@ -36,7 +36,7 @@
                             'type': "button"
                         }).appendTo(newListItem);
 
-                        newListItem.appendTo( "#images" );
+                        newListItem.appendTo( "#images" ).fadeIn(2000);
 
                         //add CSS to page when search results appear
                         $("#images").css("column-count", "4");
