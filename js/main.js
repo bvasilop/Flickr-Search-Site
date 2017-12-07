@@ -7,6 +7,7 @@
            // 2. Define the location of the Flickr API
                 let flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
                 console.log(tags);
+                $("#images").fadeIn("slow");
                 $('#images').innerHTML = '<li class="search-throbber">Searching...</li>';
                 // 3.   Construct a `$.getJSON()` call where you send a request object
                 //      including the tags the user submitted,
@@ -36,10 +37,10 @@
                             'type': "button"
                         }).appendTo(newListItem);
 
-                        newListItem.appendTo( "#images" ).fadeIn(2000);
+                        newListItem.appendTo( "#images" ).fadeIn(1000);
 
                         //add CSS to page when search results appear
-                        $("#images").css("column-count", "4");
+                        $("#images").css("column-count", "4")   ;
                         $("ul#images li").css("background-color", "#00245D");
                         $("ul#images li").css("box-shadow", "2px 2px 4px 0 #ccc");
                         //number of items to search for
@@ -118,3 +119,13 @@
                 });
             });
     });
+    window.sr = ScrollReveal({ reset: true });
+    sr.reveal('#image', { duration: 1900 });
+    sr.reveal('.container', { duration: 1200 });
+    //sr.reveal('.img-circle', { duration: 2000 });
+    //sr.reveal('.header .profile-content .name', { duration: 2300 });
+    //sr.reveal('.header .profile-content .desc', { duration: 2500 });
+    //sr.reveal('.section-inner', { duration: 700 });
+    //sr.reveal('.skills aside section', { duration: 2000 });
+    //sr.reveal('.footer', { duration: 700 },50);
+

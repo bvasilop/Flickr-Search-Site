@@ -46,16 +46,16 @@ h1{
 ul#images li {
     display: inline-grid;
     margin: 15px 0 20px;
-    width: 100%;
+    width: auto%;
     padding: 5%;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    transition: 1s ease;
+    transition: 4s ease;
 }
 ul#images li img {
     display: inline-block;
-    width: 100%;
+    width: auto;
     height: auto;
 }
 ul#images li button {
@@ -86,10 +86,14 @@ ul {
     position:relative;
     list-style-type:none;
 }
+/*----------footer----------*/
+footer {
+    text-align: center;
+}
 @media only screen and (max-width: 2000px) and (min-width: 721px){
     ul#images li img {
         display: inline-block;
-        width: 100%;
+        width: auto%;
         height: auto;
         column-count: 4;
         -webkit-column-count: 4; /* Chrome, Safari, Opera */
@@ -101,14 +105,18 @@ ul {
 
 
 @media only screen and (max-width: 720px) and (min-width: 320px){
+    ul{
+        margin: 10px 10px 10px 16px;
+    }
     ul#images li img {
         display: inline-block;
-        width: 100%;
+        width: auto%;
         height: auto;
         column-count: 12;
         -webkit-column-count: 12; /* Chrome, Safari, Opera */
         -moz-column-count: 12; /* Firefox */
 
     }
+
 }
 
