@@ -40,7 +40,7 @@
                         newListItem.appendTo( "#images" ).fadeIn(1000);
 
                         //add CSS to page when search results appear
-                        $("#images").css("column-count", "4")   ;
+                        //$("#images").css("column-count", "4")   ;
                         $("ul#images li").css("background-color", "#00245D");
                         $("ul#images li").css("box-shadow", "2px 2px 4px 0 #ccc");
                         //number of items to search for

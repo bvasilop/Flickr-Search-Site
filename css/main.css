@@ -45,9 +45,9 @@ h1{
 /*------list of images------*/
 ul#images li {
     display: inline-grid;
-    margin: 15px 0 20px;
-    width: auto%;
-    padding: 5%;
+    margin: 15px 15px 10px 5px;
+    width: auto;
+    padding: 10px;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -90,12 +90,15 @@ ul {
 footer {
     text-align: center;
 }
-@media only screen and (max-width: 2000px) and (min-width: 721px){
+@media only screen and (max-width: 1024px) and (min-width: 721px){
+    ul#images li {
+        margin: 15px 0px 15px 59px;
+    }
     ul#images li img {
         display: inline-block;
-        width: auto%;
+        width: auto;
         height: auto;
-        column-count: 4;
+
         -webkit-column-count: 4; /* Chrome, Safari, Opera */
         -moz-column-count: 4; /* Firefox */
 
@@ -104,13 +107,19 @@ footer {
 
 
 
-@media only screen and (max-width: 720px) and (min-width: 320px){
-    ul{
-        margin: 10px 10px 10px 16px;
+@media only screen and (max-width: 720px) and (min-width: 360px){
+    h1.search-title{
+        font-size: 27px;
+    }
+    #img-button {
+        text-align: center;
+    }
+    ul#images li {
+        margin: 15px 10px 15px 10px;
     }
     ul#images li img {
         display: inline-block;
-        width: auto%;
+        width: auto;
         height: auto;
         column-count: 12;
         -webkit-column-count: 12; /* Chrome, Safari, Opera */
@@ -119,4 +128,51 @@ footer {
     }
 
 }
+@media only screen and (max-width: 359px) and (min-width: 300px){
+    #img-button {
+        text-align: center;
+    }
+    h1{
+        margin-left: 10px;
 
+    }
+    #img-button {
+        margin-left: 15px;
+    }
+    h1.search-title{
+        font-size: 27px;
+    }
+    ul#images li {
+        margin: 15px 0px 15px -10px;
+    }
+    ul#images li img {
+        display: inline-block;
+        width: auto;
+        height: auto;
+
+    }
+}
+@media only screen and (max-width: 472px) and (min-width: 361px){
+    #img-button {
+        text-align: center;
+    }
+    h1{
+        margin-left: 10px;
+
+    }
+    #img-button {
+        margin-left: 15px;
+    }
+    h1.search-title{
+        font-size: 27px;
+    }
+    ul#images li {
+        margin: 15px 0px 15px 66px;
+    }
+    ul#images li img {
+        display: inline-block;
+        width: auto;
+        height: auto;
+
+    }
+}
