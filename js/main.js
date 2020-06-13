@@ -5,7 +5,7 @@ $(document).on('ready', function(){
   // 1.   Accept a string value called `tags` as an argument.
   let searchImages = function(tags) {
   // 2. Define the location of the Flickr API
-      let flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+      let flickerAPI = "https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
       // console.log(tags);
       $("#images").fadeIn("slow");
       $('#images').innerHTML = '<li class="search-throbber">Searching...</li>';
